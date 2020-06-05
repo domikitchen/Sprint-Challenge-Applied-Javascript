@@ -38,7 +38,7 @@ Edit this document to include your answers after each question. Make sure to lea
     Event listeners is something(function or something else) that 'listens', waits, or looks for a certain event to take place so it can put code into play. i.e. clicking a button may open a toolbar
 
 4. Why would we convert a NodeList into an Array?
-    NodeLists are turned into Arrays to allow us access to the content inside of it
+    NodeLists are turned into Arrays to allow us access to edit the content given to us through the nodelist
 
 5. What is a component?
     a single modular peice of code
