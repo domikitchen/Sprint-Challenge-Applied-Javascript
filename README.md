@@ -29,14 +29,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead.
 
 1. What is the DOM?
+    Document Object Moduel - each element and or node is definded as ab object, this interface allows changes to the content of the HTML without changing the actual HTML file
 
 2. What is an event?
+    Events are things that happen to the HTML that the JavaScript can react to
 
 3. What is an event listener?
+    Event listeners is something(function or something else) that 'listens', waits, or looks for a certain event to take place so it can put code into play. i.e. clicking a button may open a toolbar
 
 4. Why would we convert a NodeList into an Array?
+    NodeLists are turned into Arrays to allow us access to the content inside of it
 
 5. What is a component?
+    a single modular peice of code
 
 ### Git Set up
 
