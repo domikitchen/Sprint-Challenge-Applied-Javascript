@@ -7,3 +7,31 @@
 //
 //  Each tab should look like this:
 //    <div class="tab">topic here</div>
+
+const topicTabs = document.querySelector('.topics');
+
+function tabs() {
+    const lambdaTopics = axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
+        lambdaTopics.then((response) => {
+                const topic = response.data.topics;
+
+                console.log(topic);
+
+                topic.forEach(thing => {
+                    const tab = document.createElement('div')
+                    tab.classList.add('tab');
+                    tab.innerHTML = `${thing}`;
+
+                    topicTabs.appendChild(tab);
+                    
+                    tab.addEventListener('click', (event) => {
+                        tab.classList.toggle('active-tab');
+                    });
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+}
+
+tabs();
